@@ -17,5 +17,5 @@ void more_numbers(void)
 			_putchar(digits[j]);
 			j++;
 		}
-	}	
+	}
 }
