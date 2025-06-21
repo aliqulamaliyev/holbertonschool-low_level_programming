@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  * mul - multpilies two integers
- * @a: first integer 
- * @b: second integer 
+ * @a: first integer
+ * @b: second integer
  *
  * Return: the result of multpilication
  */
