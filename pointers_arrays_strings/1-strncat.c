@@ -1,11 +1,11 @@
 /**
- * _strcat - concatenates two strings
+ * _strncat - concatenates two strings
  * @dest: destination string (must have enough space)
  * @src: source string to append to dest
  *
  * Return: pointer to the resulting string dest
  */
-char *_strcat(char *dest, char *src)
+char *_strncat(char *dest, char *src, int n)
 {
 	int i = 0;
 	int j = 0;
@@ -13,7 +13,7 @@ char *_strcat(char *dest, char *src)
 	while (dest[i] != '\0')
 		i++;
 
-	while (src[j] != '\0')
+	while (j < n && src[j] != '\0')
 	{
 		dest[i] = src[j];
 		i++;
