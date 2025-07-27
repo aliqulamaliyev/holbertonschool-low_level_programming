@@ -8,7 +8,7 @@
  *
  * Return: length
  */
-unsigned int _strlen(const char *s)
+size_t _strlen(const char *s)
 {
 	unsigned int i = 0;
 
