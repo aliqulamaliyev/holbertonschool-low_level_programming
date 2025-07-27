@@ -16,7 +16,17 @@ size_t _strlen(const char *s)
 
 	return (length);
 }
-
+/**
+ * add_node_end - adds a new node at the end of a list_t list
+ * @head: double pointer to the head of the list
+ * @str: string to be duplicated and added to the new node
+ *
+ * Return: address of the new element, or NULL if it failed
+ *
+ * Description: This function creates a new node with a copy of the
+ *              string `str`, sets the length of the string,
+ *              and adds the node at the end of the list.
+ */
 list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *new_node, *temp;
