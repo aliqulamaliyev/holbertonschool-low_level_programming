@@ -1,6 +1,21 @@
 #include <stdlib.h>
 #include "lists.h"
 #include <string.h>
+/**
+ * _strlen - returns the length of a string
+ * @s: pointer to the string to measure
+ *
+ * Return: the length of the string
+ */
+size_t _strlen(const char *s)
+{
+	size_t length = 0;
+
+	while (s[length] != '\0')
+		length++;
+
+	return (length);
+}
 
 list_t *add_node_end(list_t **head, const char *str)
 {
